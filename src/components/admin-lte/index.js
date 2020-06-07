@@ -2,6 +2,8 @@ import React from "react"
 import Example from "./example"
 import Example2 from "./example2"
 import Example3 from "./example3"
+import ExampleBCH from "./example-bch"
+
 
 import AdminLTE, { Sidebar } from "adminlte-2-react"
 
@@ -11,6 +13,7 @@ class AdminLTEPage extends React.Component {
   state = {}
 
   sidebar = [
+    <Item key="bch" text="BCHJS" to="/" />,
     <Item key="test" text="TEST" to="/test" />,
     <Item key="img" text="IMG" to="/img" />,
     <Item key="forms" text="FORMS" to="/forms" />,
@@ -27,6 +30,7 @@ class AdminLTEPage extends React.Component {
         <Example path="/test" />
         <Example2 path="/img" />
         <Example3 path="/forms" />
+        <ExampleBCH path="/" />
       </AdminLTE>
     )
   }
