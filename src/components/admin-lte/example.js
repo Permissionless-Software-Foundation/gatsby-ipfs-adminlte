@@ -4,10 +4,12 @@ import { Content, Row, Col, Box, Button } from "adminlte-2-react"
 
 class Example extends React.Component {
   constructor(props) {
-    this.importCards = <></>
+    super(props)
+    
+    this.state = {
+      importCards: <></>
+    }
   }
-
-  state = {}
 
   render() {
     return (
@@ -17,7 +19,7 @@ class Example extends React.Component {
         browserTitle="Hello World"
       >
         {this.defaultCards()}
-        {this.importCards}
+        {this.state.importCards}
       </Content>
     )
   }
