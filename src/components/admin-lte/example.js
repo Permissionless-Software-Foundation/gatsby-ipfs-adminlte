@@ -7,11 +7,13 @@ class Example extends React.Component {
     super(props)
 
     this.state = {
-      importCards: <><p>original</p></>
+      // importCards: <><p>original</p></>
+      someKey: 'value'
     }
   }
 
   render() {
+    // {this.state.importCards}
     return (
       <Content
         title="Test"
@@ -19,7 +21,7 @@ class Example extends React.Component {
         browserTitle="Hello World"
       >
         {this.defaultCards()}
-        {this.state.importCards}
+        {this.props.importComponents}
       </Content>
     )
   }
