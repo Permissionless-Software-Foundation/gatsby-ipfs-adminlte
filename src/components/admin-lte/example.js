@@ -3,6 +3,10 @@ import React from "react"
 import { Content, Row, Col, Box, Button } from "adminlte-2-react"
 
 class Example extends React.Component {
+  constructor(props) {
+    this.importCards = <></>
+  }
+
   state = {}
 
   render() {
@@ -13,7 +17,7 @@ class Example extends React.Component {
         browserTitle="Hello World"
       >
         {this.defaultCards()}
-        {this.importCards()}
+        {this.importCards}
       </Content>
     )
   }
@@ -39,9 +43,9 @@ class Example extends React.Component {
     )
   }
 
-  importCards() {
-    return(<></>)
-  }
+  // importCards() {
+  //   return(<></>)
+  // }
 }
 
 export default Example
