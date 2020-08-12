@@ -5,9 +5,9 @@ import { Content, Row, Col, Box, Button } from "adminlte-2-react"
 class Example extends React.Component {
   constructor(props) {
     super(props)
-    
+
     this.state = {
-      importCards: <></>
+      importCards: <><p>original</p></>
     }
   }
 
