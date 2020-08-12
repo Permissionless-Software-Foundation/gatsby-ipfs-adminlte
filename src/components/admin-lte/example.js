@@ -12,24 +12,35 @@ class Example extends React.Component {
         subTitle="Getting started with adminlte-2-react"
         browserTitle="Hello World"
       >
-        <Row>
-          <Col xs={6}>
-            <Box
-              title="My first box"
-              type="primary"
-              closable
-              collapsable
-              footer={<Button type="danger" text="Danger Button" />}
-            >
-              Hello World
-            </Box>
-          </Col>
-          <Col xs={6}>
-            <Box title="Another box">Content goes here</Box>
-          </Col>
-        </Row>
+        {this.defaultCards()}
+        {this.importCards()}
       </Content>
     )
+  }
+
+  defaultCards() {
+    return (
+      <Row>
+        <Col xs={6}>
+          <Box
+            title="My first box"
+            type="primary"
+            closable
+            collapsable
+            footer={<Button type="danger" text="Danger Button" />}
+          >
+            Hello World
+          </Box>
+        </Col>
+        <Col xs={6}>
+          <Box title="Another box">Content goes here</Box>
+        </Col>
+      </Row>
+    )
+  }
+
+  importCards() {
+    return(<></>)
   }
 }
 
